@@ -28,8 +28,8 @@ export default function SignUp() {
         return setErrorMessage(data.message);
       }
       setLoading(false);
-      if(res.ok) {
-        navigate('/signin');
+      if (res.ok) {
+        navigate("/signin");
       }
     } catch (error) {
       setErrorMessage(error.message);
@@ -97,8 +97,8 @@ export default function SignUp() {
             </Button>
           </form>
           <div className="flex gap-2" text-sm mt-5>
-            <span>Have an account already</span>
-            <Link to="signin" className="text-blue-500">
+            <span>Have an Account Already?</span>
+            <Link to="/signin" className="text-blue-500">
               Sign In
             </Link>
           </div>
